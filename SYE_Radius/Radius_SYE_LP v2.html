@@ -1,0 +1,612 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Radius</title>
+</head>
+
+<body>
+    <a href="/" class="logo">
+        <svg viewBox="-50 0 900 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M51.6537 17.0422C50.9042 16.7918 49.566 16.5413 48.5489 16.5413C47.1303 16.5413 45.6582 16.7361 44.2931 17.1813C44.2931 17.1813 44.3467 17.5152 44.3467 17.6821V36.5189H38.6724V17.8491C38.6724 16.6248 38.2441 14.1763 38.2441 14.1763C41.6434 12.7017 45.2835 11.4774 49.0039 11.4774C50.476 11.4774 52.0819 11.6722 53.3399 12.0061L51.6537 17.0422Z"
+                fill="#101820"></path>
+            <path
+                d="M64.1794 36.5189C59.5409 36.5189 53.3379 34.8313 53.3379 29.2242C53.3379 19.5342 68.3239 22.8549 68.3239 18.6632C68.3239 16.649 65.7164 16.4585 64.2617 16.4585C62.0934 16.4585 59.5683 17.0301 57.5373 17.9011L55.5611 13.5461C58.4156 12.2395 61.9562 11.4774 65.0851 11.4774C70.2726 11.4774 74.1426 13.7366 74.1426 19.2893V31.6194C74.1426 32.6265 74.4719 34.6407 74.4719 34.6407C71.1509 35.6478 67.72 36.5189 64.1794 36.5189ZM68.3513 30.1224V24.2159C66.3751 26.094 59.733 25.3046 59.733 28.7615C59.733 31.2656 62.1483 31.7011 64.2343 31.7011C65.6341 31.7011 67.0887 31.4561 68.4336 31.0206C68.4336 31.0478 68.3513 30.4762 68.3513 30.1224Z"
+                fill="#101820"></path>
+            <path
+                d="M90.437 36.5188C82.9851 36.5188 77.4971 31.2732 77.4971 23.7023C77.4971 17.4292 81.2096 11.6428 88.3655 11.6428C90.168 11.6428 92.0511 12.0754 93.6652 12.9407V1.04346H99.3416V31.5977C99.3416 32.6522 99.6375 34.7883 99.6375 34.7883C96.8935 35.7617 93.3962 36.5188 90.437 36.5188ZM93.6652 30.1646V17.7266C92.6161 16.9154 91.1902 16.591 89.7644 16.591C85.4601 16.591 83.846 20.0249 83.846 23.9727C83.846 28.2448 85.9443 31.5436 90.4908 31.5436C91.5669 31.5436 92.7506 31.4895 93.7459 31.111C93.7728 31.138 93.6652 30.5161 93.6652 30.1646Z"
+                fill="#101820"></path>
+            <path
+                d="M108.145 6.92935C106.172 6.92935 104.664 5.56024 104.664 3.49261C104.664 1.53675 106.172 0 108.145 0C110.091 0 111.708 1.53675 111.708 3.49261C111.736 5.56024 110.091 6.92935 108.145 6.92935ZM105.349 11.9028H111.16V36.5188H105.377V11.9028H105.349Z"
+                fill="#101820"></path>
+            <path
+                d="M126.597 36.5189C121.077 36.5189 116.738 34.5755 116.738 27.8015V11.5052H122.181V26.8576C122.181 29.856 124.004 31.3551 126.674 31.3551C128.214 31.3551 129.806 30.8554 131.244 30.2724C131.244 30.2724 131.167 29.5783 131.167 29.2452V11.4774H136.558V30.6055C136.558 31.7715 136.866 34.0203 136.866 34.0203C133.708 35.2973 129.96 36.5189 126.597 36.5189Z"
+                fill="#101820"></path>
+            <path
+                d="M148.646 36.5189C145.982 36.5189 143.237 35.8384 140.892 34.9402L142.544 30.4218C144.196 31.1567 146.408 31.8644 148.167 31.8644C149.899 31.8644 151.738 31.3473 151.738 29.2242C151.738 24.9508 141.505 26.2573 141.505 18.391C141.505 13.4644 146.488 11.4774 150.192 11.4774C152.67 11.4774 155.175 12.049 156.961 12.92L155.362 17.3839C153.87 16.8123 151.791 16.2679 150.192 16.2679C148.78 16.2679 147.287 16.7035 147.287 18.4183C147.287 22.4467 158 20.623 158 29.3058C158 34.6408 152.937 36.5189 148.646 36.5189Z"
+                fill="#101820"></path>
+            <path
+                d="M15.2352 15.6518C11.8044 15.7359 9.03233 18.7346 9.05977 22.2937V37.4272C10.9261 38.2119 12.9846 38.6322 15.1254 38.6042L15.0156 21.8453L21.1362 20.1078C20.8343 19.0709 20.2853 18.118 19.5168 17.3614C18.3915 16.2123 16.8545 15.6238 15.2352 15.6518Z"
+                fill="#EA0029"></path>
+            <path
+                d="M15.2923 5.21735C6.80837 5.27158 -0.052072 12.5652 0.000297844 21.5398C0.0264828 26.2305 1.93798 30.4331 4.97543 33.3885V21.9194C4.97543 21.6212 4.97543 21.3229 5.00162 21.0518C5.39439 15.3579 9.92438 10.7486 15.4494 10.5859C18.2512 10.5045 20.922 11.5891 22.9383 13.5955C24.2999 14.9512 25.2425 16.6051 25.7401 18.4489L30.1915 17.1745C28.4371 10.2605 22.4146 5.16312 15.2923 5.21735Z"
+                fill="#EA0029"></path>
+        </svg>
+    </a>
+    <h2 class="phone-number">
+    </h2>
+    <div class="container snipcss-ELkHR">
+        <main role="main" class="pb-3">
+            <div class="container">
+                <div class="contentbox borders">
+                    <h1 class="page-title">
+                        Energy Switching
+                    </h1>
+                    <h2>
+                        Cheaper
+                        <span class="colour2">
+                            Business
+                        </span>
+                        Energy, Made Simple
+                    </h2>
+                    <p class="text-center">
+                        The fast, efficient way to get the best value energy contracts, reduce consumption and minimise
+                        your carbon footprint. Radius never stops looking after your best interests.
+                    </p>
+                    <p class="instructions text-center">
+                        Our two simple ways to get a quote and save on your business bills:
+                    </p>
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-self-stretch">
+                        <div class="callback-panel w-100 mb-2 m-md-2 borders">
+                            <a href="Redsquid_SYE_Frame v2.html" class="text-center d-block w-100">
+                                <h5 class="quote-link">
+                                    Get an Online Energy Quote
+                                </h5>
+                            </a>
+                            <p class="text-center">
+                                Enter your postcode or meter numbers and get an instant
+                                online quote with no obligation.
+                            </p>
+                            <a href="Redsquid_SYE_Frame v2.html" class="btn btn-cpwb text-center d-block w-100">
+                                Start a Quote
+                            </a>
+                        </div>
+                        <div class="callback-panel w-100 mb-2 m-md-2 borders">
+                            <h5 class="text-center">
+                                Request a Call Back
+                            </h5>
+                            <p class="text-center">
+                                If you would rather speak to one of our helpful team members
+                                to get your quote.
+                            </p>
+                            <div class="callback-container p-3 ">
+                                <div class="form-group">
+                                    <form>
+                                        <div class="form-group" style="margin-left:4px">
+                                            <input type="text" class="form-control" id="Inputforms"
+                                                placeholder="Your name" style="width: 100%">
+                                            <input type="text" class="form-control" id="Inputforms"
+                                                placeholder="Company name">
+                                        </div>
+                                        <div class="form-group" style="margin-left:4px; margin-bottom: 5px">
+                                            <input type="text" class="form-control" id="Inputforms"
+                                                placeholder="Contact number">
+                                            <input type="text" class="form-control" id="Inputforms"
+                                                placeholder="Email (Optional)">
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <a href="/Quote" class="btn btn-cpwb text-center d-block w-100">
+                                    Save Today!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column align-self-stretch">
+                        <div class="d-flex flex-column flex-md-row justify-content-between align-self-stretch mb-2">
+                            <div class="usp w-100 m-1 borders">
+                                <img src="/images/Tailored Black Shadow.png" class="icon">
+                                <h3>
+                                    Tailored Solutions
+                                </h3>
+                                <p>
+                                    We monitor the market closely and get to know your business to help
+                                    lower your usage and get the right tariffs for you. We take the time
+                                    to get to know each of our clients before we start to search for the
+                                    best deal possible.
+                                </p>
+                            </div>
+                            <div class="usp w-100 m-1 borders">
+                                <img src="/images//Contract Black Shadow.png" class="icon">
+                                <h3>
+                                    Proactive Contract Management
+                                </h3>
+                                <p>
+                                    Our Energy partners use Smart Technology to proactively manage
+                                    contracts in life and ensure you never fall on to high out-of-contract
+                                    rates. Prices can vary by up to 28% between Energy suppliers. We
+                                    strive to provide all our customers cost savings against current
+                                    expenditure.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row justify-content-between align-self-stretch mb-2">
+                            <div class="usp w-100 m-1 borders">
+                                <img src="/images/Market Black Shadow.png" class="icon">
+                                <h3>
+                                    Market Expertise
+                                </h3>
+                                <p>
+                                    Buying at the right time by constantly monitoring the market. This
+                                    allows us to forward buy for our clients' energy at the low points
+                                    in a constantly fluctuating market.
+                                </p>
+                            </div>
+                            <div class="usp w-100 m-1 borders">
+                                <img src="/images/Multi Black Shadow.png" class="icon">
+                                <h3>
+                                    Multiple Suppliers
+                                </h3>
+                                <p>
+                                    We compare the market to ensure that you get the best price with
+                                    up to 20 different suppliers to choose from.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row justify-content-between align-self-stretch mb-2">
+                            <div class="usp w-100 m-1 borders">
+                                <img src="/images/Stream Black Shadow.png" class="icon">
+                                <h3>
+                                    Service Streamlining
+                                </h3>
+                                <p>
+                                    We can align all of your sites, services and contract end dates,
+                                    making it simpler to manager your energy movements.
+                                </p>
+                            </div>
+                            <div class="usp w-100 m-1 borders">
+                                <img src="/images/Impartial Black Shadow.png" class="icon">
+                                <h3>
+                                    Impartial Advice
+                                </h3>
+                                <p>
+                                    We remain 100% impartial
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="text-center">
+                        We can only work with the best
+                    </h3>
+                    <p class="text-center">
+                        We carefully vet our supplier panel, for financial stability, billing accuracy, ease of
+                        doing business and customer service. So however good the deal, you have peace of mind.
+                    </p>
+                    <p class="text-center">
+                        Yet another way Radius can save you money and create efficiencies.
+                    </p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+    </footer>
+</body>
+
+</html>
+<style>
+    .logo {
+        vertical-align: middle;
+        border-style: none;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .phone-number {
+        text-align: right;
+        margin-right: 30px;
+        margin-top: 5px;
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        text-align: left;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+
+    body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        text-align: left;
+        background-color: #ffffff;
+    }
+
+    body {
+        color: #333;
+        font-size: 15px;
+        font-family: Currys Sans, sans-serif;
+        width: 980px;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+
+    html {
+        font-family: sans-serif;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+        -ms-text-size-adjust: 100%;
+    }
+
+    html {
+        font-family: Currys Sans, sans-serif;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @media (min-width: 576px) {
+        .container {
+            max-width: 540px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            max-width: 720px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .container {
+            max-width: 960px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 1140px;
+        }
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    *,
+    :after,
+    :before {
+        box-sizing: border-box;
+    }
+
+    main {
+        display: block;
+    }
+
+    .pb-3 {
+        padding-bottom: 1rem !important;
+    }
+
+    .contentbox {
+        border-color: #d41e26;
+        border-width: 10px !important;
+        border-style: solid;
+        background-color: #f2f3f4;
+        padding: 0 15px 15px 15px;
+
+    }
+
+    h1 {
+        margin-top: 0;
+        margin-bottom: .5rem;
+    }
+
+    h1 {
+        margin-bottom: .5rem;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .page-title {
+        font-family: Currys Sans, sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+        font-style: normal;
+        margin-bottom: 10px;
+        color: #fff;
+        text-align: center;
+        background-color: #07326e;
+        padding-bottom: 15px;
+        margin-left: -15px;
+        margin-right: -15px;
+        background-color: #d41e26;
+    }
+
+    h2 {
+        margin-top: 0;
+        margin-bottom: .5rem;
+    }
+
+    h2 {
+        margin-bottom: .5rem;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-weight: 700;
+        color: #000;
+        font-size: 22px;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .text-center {
+        text-align: center !important;
+    }
+
+    .instructions {
+        color: #0ba7e1;
+        font-size: 20px;
+    }
+
+    .d-flex {
+        display: -ms-flexbox !important;
+        display: flex !important;
+    }
+
+    .flex-column {
+        -ms-flex-direction: column !important;
+        flex-direction: column !important;
+    }
+
+    .justify-content-between {
+        -ms-flex-pack: justify !important;
+        justify-content: space-between !important;
+    }
+
+    .align-self-stretch {
+        -ms-flex-item-align: stretch !important;
+        align-self: stretch !important;
+    }
+
+    @media (min-width: 768px) {
+        .flex-md-row {
+            -ms-flex-direction: row !important;
+            flex-direction: row !important;
+        }
+    }
+
+    h3 {
+        margin-top: 0;
+        margin-bottom: .5rem;
+    }
+
+    h3 {
+        margin-bottom: .5rem;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        color: #d41e26;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    h2 .colour2 {
+        color: #06205c;
+    }
+
+    .w-100 {
+        width: 100% !important;
+    }
+
+    .mb-2 {
+        margin-bottom: .5rem !important;
+    }
+
+    @media (min-width: 768px) {
+        .m-md-2 {
+            margin: .5rem !important;
+        }
+    }
+
+    .callback-panel {
+        color: #fff;
+        padding: 18px;
+        background-color: whitesmoke;
+        border-color: black;
+        border-width: 3px;
+        border-style: solid;
+        border-color: #d41e26 !important;
+    }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+        background-color: transparent;
+    }
+
+    .d-block {
+        display: block !important;
+    }
+
+    a:hover {
+        color: #0ba7e1;
+        text-decoration: underline;
+    }
+
+    a:active,
+    a:hover {
+        outline-width: 0;
+    }
+
+    .callback-panel p {
+        color: #000;
+        border-color: #e50068;
+    }
+
+    .btn {
+        display: inline-block;
+        font-weight: 400;
+        color: #212529;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+
+    .btn-cpwb {
+        background-color: #efc619;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .btn:hover {
+        color: #000000;
+        text-decoration: none;
+    }
+
+    h5 {
+        margin-top: 0;
+        margin-bottom: .5rem;
+    }
+
+    h5 {
+        margin-bottom: .5rem;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    h5 {
+        font-size: 1.25rem;
+    }
+
+    h5 {
+        color: #000000;
+    }
+
+    .p-3 {
+        padding: 1rem !important;
+    }
+
+    .callback-container {
+        background-color: whitesmoke;
+        width: 100%;
+    }
+
+    .m-1 {
+        margin: .25rem !important;
+    }
+
+    .usp {
+        background-color: #35424b;
+        text-align: center;
+        padding: 0 15px;
+        color: #000000;
+        background-color: white;
+        background-color: white !important;
+        border: solid 3px #e3e3e3 !important;
+    }
+
+    .borders {
+        border-top-width: 3px;
+        border-right-width: 3px;
+        border-bottom-width: 3px;
+        border-left-width: 3px;
+
+        border-left-style: solid !important;
+        border-right-style: solid !important;
+        border-top-style: solid !important;
+        border-bottom-style: solid !important;
+        border-radius: 15px !important;
+    }
+
+    .quote-link {
+        color: #000000;
+        padding: 15px 15px 0 15px;
+    }
+
+    .callback-frame {
+        width: 100%;
+        border: none;
+        min-height: 320px;
+    }
+
+    img {
+        vertical-align: middle;
+        border-style: none;
+        padding-top: 15px;
+    }
+
+    .usp img {
+        vertical-align: middle;
+    }
+
+    .usp .icon {
+        min-height: 96px;
+        min-width: 96px;
+        max-height: 40px;
+        margin: 0 0 20px;
+    }
+
+    #Inputforms {
+        width: 100%;
+        height: 30px;
+        margin-bottom: 5px;
+    }
+</style>
